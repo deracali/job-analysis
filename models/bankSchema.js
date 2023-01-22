@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
 
-const questionModel = new Schema({
+const bankModel = new Schema({
   questions: {
     type: Array,
     default: [],
@@ -16,4 +16,4 @@ const questionModel = new Schema({
   },
 });
 
-export default mongoose.model("Question", questionModel);
+export default mongoose.model("Bank", bankModel);
